@@ -14,12 +14,11 @@ class WidgetPhaseEditorViewModel {
     // MARK: - 属性
 
     var selection: MovableObject?
-    var selectedImage = ""
     var selectedControl: Control = .background
     var selectedBackgroundKind = BackgroundKind.linearGredient
     var selectedFontName: String?
     var fontSize: CGFloat = 20
-    var selectedSticker: String = stickerMap.keys.elements.first ?? ""
+    var selectedStickerPack: String = stickerMap.keys.elements.first ?? ""
 
     var showInputText = false
     var text = ""
@@ -74,9 +73,9 @@ class WidgetPhaseEditorViewModel {
 
     func addEventInfo(_ eventInfo: EventInfoKind) {
         let (fontName, fontSize) = getFontSettings(for: eventInfo)
-        let mf = EventInfo(eventInfo: eventInfo, eventInfoProvider: phase.getEventInfoProvider(), position: widgetCenter, fontName: fontName, fontSize: fontSize)
-        phase.eventInfo.append(mf)
-        selection = mf
+        let eventInfo = EventInfo(eventInfo: eventInfo, eventInfoProvider: phase.getEventInfoProvider(), position: widgetCenter, fontName: fontName, fontSize: fontSize)
+        phase.eventInfo.append(eventInfo)
+        selection = eventInfo
     }
 
     // Handles the change in selected control and creates a new text item if needed.
@@ -87,7 +86,7 @@ class WidgetPhaseEditorViewModel {
     }
 
     // Updates the selection details based on the selected object.
-    func updateSelectionDetails(_ newValue: MovableObject?) {
+    func updateSelectionDetails(_ oldValue: MovableObject?, _ newValue: MovableObject?) {
         guard let newValue = newValue else { return }
         selectedControl = switch newValue {
         case is TextItem: .text

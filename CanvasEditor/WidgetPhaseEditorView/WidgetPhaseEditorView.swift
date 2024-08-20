@@ -14,30 +14,23 @@ import SwiftUIX
 
 // Represents a phase of the widget editing process.
 struct WidgetPhaseEditorView: View {
-    // Represents a phase of the widget editing process.
     @Bindable var phase: WidgetPhase
-
-    // Size of the widget being edited.
     let widgetSize: CGSize
-    // Center point of the widget for positioning elements.
     let widgetCenter: CGPoint
-    // Fixed height for the bottom panel.
-    let height = 264.0
+    let saveAction: (WidgetPhase) -> Void
 
-    init(phase: WidgetPhase, widgetSize: CGSize) {
-        self.widgetSize = widgetSize
-        widgetCenter = .init(x: widgetSize.width / 2, y: widgetSize.height / 2)
-
-        Logging.openUrl.debug("WidgetPhaseEditorView init ")
-
-        self.phase = phase
-    }
-
-    // Environment variables for managing app state and interactions.
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.dismiss) private var dismiss
-
     @State private var editorViewModel = WidgetPhaseEditorViewModel()
+
+    private let bottomPanelHeight = 264.0
+
+    init(phase: WidgetPhase, widgetSize: CGSize, saveAction: @escaping (WidgetPhase) -> Void) {
+        self.phase = phase
+        self.widgetSize = widgetSize
+        widgetCenter = CGPoint(x: widgetSize.width / 2, y: widgetSize.height / 2)
+        self.saveAction = saveAction
+    }
 
     var body: some View {
         NavigationStack {
@@ -46,8 +39,9 @@ struct WidgetPhaseEditorView: View {
                     Spacer()
                     WidgetPhaseEditorCardView(phase: phase, widgetSize: widgetSize, selection: $editorViewModel.selection)
                     Spacer()
-                    WidgetEditorControlsView(phase: phase, vm: editorViewModel, height: height)
-                }.ignoresSafeArea(.keyboard)
+                    WidgetEditorControlsView(phase: phase, vm: editorViewModel, height: bottomPanelHeight)
+                }
+                .ignoresSafeArea(.keyboard)
             }
             .toolbar {
                 WidgetEditorToolbarContent(phase: phase, saveAction: editorViewModel.saveWidgetTemplateModel)
@@ -61,9 +55,11 @@ struct WidgetPhaseEditorView: View {
         .alert("输入文字", isPresented: $editorViewModel.showInputText) {
             textInputAlert
         }
-        .onChange(of: editorViewModel.selection, perform: editorViewModel.updateSelectionDetails)
         .onAppearOnce {
             editorViewModel.configure(phase: phase, widgetCenter: widgetCenter)
+        }
+        .onChange(of: editorViewModel.selection) { oldValue, newValue in
+            editorViewModel.updateSelectionDetails(oldValue, newValue)
         }
     }
 

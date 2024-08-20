@@ -49,6 +49,7 @@
 		8DC0F7792C74E05800F810B8 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7712C74E05800F810B8 /* TimerView.swift */; };
 		8DC0F77A2C74E05800F810B8 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7722C74E05800F810B8 /* WeekdayView.swift */; };
 		8DC0F77C2C74E0B900F810B8 /* EventInfoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F77B2C74E0B900F810B8 /* EventInfoPickerView.swift */; };
+		8DC0F77E2C74E67400F810B8 /* IconSetPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F77D2C74E67400F810B8 /* IconSetPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		8DC0F7712C74E05800F810B8 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		8DC0F7722C74E05800F810B8 /* WeekdayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
 		8DC0F77B2C74E0B900F810B8 /* EventInfoPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInfoPickerView.swift; sourceTree = "<group>"; };
+		8DC0F77D2C74E67400F810B8 /* IconSetPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSetPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				8DC0F73A2C74AAEC00F810B8 /* CornerRadiusModifier.swift */,
+				8DC0F77D2C74E67400F810B8 /* IconSetPickerView.swift */,
 			);
 			path = ViewModifier;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				8DC0F7742C74E05800F810B8 /* DaysSinceEventView.swift in Sources */,
 				8DC0F7792C74E05800F810B8 /* TimerView.swift in Sources */,
 				8DC0F74F2C74AB9E00F810B8 /* WidgetPhaseEditorView.swift in Sources */,
+				8DC0F77E2C74E67400F810B8 /* IconSetPickerView.swift in Sources */,
 				8DC0F75C2C74ACA200F810B8 /* TextStyleEditor.swift in Sources */,
 				8DC0F7612C74AD1700F810B8 /* Line.swift in Sources */,
 				8DC0F7772C74E05800F810B8 /* EventStartDate.swift in Sources */,

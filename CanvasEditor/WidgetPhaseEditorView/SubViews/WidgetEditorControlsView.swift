@@ -17,10 +17,17 @@ struct WidgetEditorControlsView: View {
     @Bindable var phase: WidgetPhase
     @Bindable var vm: WidgetPhaseEditorViewModel
     let height: CGFloat
+    
+    init(phase: WidgetPhase, vm: WidgetPhaseEditorViewModel, height: CGFloat) {
+        self.phase = phase
+        self.vm = vm
+        self.height = height
+        print("init WidgetEditorControlsView")
+    }
 
     var body: some View {
         VStack(spacing: 0) {
-            ControlPanel(selectedControl: $vm.selectedControl, selectedSticker: $vm.selectedSticker, showInputText: $vm.showInputText, selectedBackgroundKind: $vm.selectedBackgroundKind)
+            ControlPanel(selectedControl: $vm.selectedControl, selectedSticker: $vm.selectedStickerPack, showInputText: $vm.showInputText, selectedBackgroundKind: $vm.selectedBackgroundKind)
                 .contentMargins(.horizontal, 12)
                 .frame(maxHeight: 30)
                 .padding(.vertical, 10)

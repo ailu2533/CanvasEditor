@@ -34,7 +34,7 @@ enum Control: Int, Hashable, CaseIterable {
         case .background:
             BackgroundPickerView(selectedBackgroundKind: vm.selectedBackgroundKind, background: phase.background)
         case .sticker:
-            SingleIconSetIconPickerView(selectedImg: $vm.selectedImage, icons: stickerMap[vm.selectedSticker] ?? [], tapCallback: vm.addSticker)
+            SingleIconSetIconPickerView2( icons: stickerMap[vm.selectedStickerPack] ?? [], tapCallback: vm.addSticker)
         case .text:
             TextStyleEditor(textItem: Binding(
                 get: { vm.selection as? Stylable },
