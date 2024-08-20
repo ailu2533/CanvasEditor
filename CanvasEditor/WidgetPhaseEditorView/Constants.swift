@@ -32,12 +32,6 @@ let allTagTitle = String(localized: "全部事件")
 let defaultFillStyle = AnyShapeStyle(LinearGradient(colors: [.blue, .blue.opacity(0.6), .cyan], startPoint: .topLeading, endPoint: .bottomTrailing))
 
 let stickerMap: OrderedDictionary<String, [String]> = [
-//    "Bunny Expressions": [
-//        "001-angry", "002-birthday", "003-eat", "004-fever", "005-full",
-//        "006-happy", "007-hi", "008-love", "009-mocking", "010-No",
-//        "011-peace", "012-proud", "013-relaxed", "014-run", "015-sad",
-//        "016-shocked", "017-sing", "018-bored", "019-yes", "020-yoga",
-//    ],
     "Puppy Antics": [
         "001-dog", "002-dog", "003-dog", "004-dog", "005-dog",
         "006-dog", "007-Dog house", "008-dog", "009-dog", "010-dog",

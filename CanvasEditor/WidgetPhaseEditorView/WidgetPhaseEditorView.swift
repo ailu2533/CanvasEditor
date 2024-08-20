@@ -5,22 +5,15 @@
 //  Created by ailu on 2024/5/5.
 //
 
-import Combine
 import HorizontalPicker
 import LemonCountdownModel
-//import LemonUtils
 import PagerTabStripView
-import SwiftData
 import SwiftMovable
 import SwiftUI
-import WidgetKit
 import SwiftUIX
 
 // Represents a phase of the widget editing process.
 struct WidgetPhaseEditorView: View {
-    @Environment(WidgetTemplate.self)
-    private var widgetTemplate
-
     // Represents a phase of the widget editing process.
     @Bindable var phase: WidgetPhase
 
@@ -43,8 +36,6 @@ struct WidgetPhaseEditorView: View {
     // Environment variables for managing app state and interactions.
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.dismiss) private var dismiss
-    @Environment(\.modelContext) private var modelContext
-//    @Environment(ViewModel.self) private var vm
 
     @State private var editorViewModel = WidgetPhaseEditorViewModel()
 
@@ -59,22 +50,20 @@ struct WidgetPhaseEditorView: View {
                 }.ignoresSafeArea(.keyboard)
             }
             .toolbar {
-                WidgetEditorToolbarContent(widgetTemplate: widgetTemplate, phase: phase, saveAction: editorViewModel.saveWidgetTemplateModel)
+                WidgetEditorToolbarContent(phase: phase, saveAction: editorViewModel.saveWidgetTemplateModel)
             }
         }
         .ignoresSafeArea(.all, edges: .bottom)
         .onDisappear(perform: editorViewModel.saveWidgetTemplateModel)
-        .onChange(of: scenePhase) { oldValue, newValue in
-            if oldValue == .active && newValue == .inactive {
-                editorViewModel.saveWidgetTemplateModel()
-            }
+        .onChange(of: scenePhase) { _, _ in
+            // TODO:
         }
         .alert("输入文字", isPresented: $editorViewModel.showInputText) {
             textInputAlert
         }
         .onChange(of: editorViewModel.selection, perform: editorViewModel.updateSelectionDetails)
         .onAppearOnce {
-            editorViewModel.configure(widgetTemplate: widgetTemplate, phase: phase, modelContext: modelContext, widgetCenter: widgetCenter)
+            editorViewModel.configure(phase: phase, widgetCenter: widgetCenter)
         }
     }
 

@@ -7,42 +7,33 @@
 
 import Foundation
 import LemonCountdownModel
-import SwiftData
 import SwiftMovable
-import WidgetKit
 
 @Observable
 class WidgetPhaseEditorViewModel {
     // MARK: - 属性
 
     var selection: MovableObject?
-//    var selectedMovableObjectUUID: UUID?
     var selectedImage = ""
     var selectedControl: Control = .background
     var selectedBackgroundKind = BackgroundKind.linearGredient
     var selectedFontName: String?
     var fontSize: CGFloat = 20
     var selectedSticker: String = stickerMap.keys.elements.first ?? ""
-    var highlightX = false
-    var highlightY = false
-    var shouldShowGuideline = true
+
     var showInputText = false
     var text = ""
-    var canDeleted = false
 
-    private(set) var widgetTemplate: WidgetTemplate!
+//    private(set) var widgetTemplate: WidgetTemplate!
     private(set) var phase: WidgetPhase!
-    private(set) var modelContext: ModelContext!
+//    private(set) var modelContext: ModelContext!
     private(set) var widgetCenter: CGPoint!
-
-    // MARK: - 初始化方法
-
-    func configure(widgetTemplate: WidgetTemplate, phase: WidgetPhase, modelContext: ModelContext, widgetCenter: CGPoint) {
-        self.widgetTemplate = widgetTemplate
+//
+//    // MARK: - 初始化方法
+//
+    func configure(phase: WidgetPhase, widgetCenter: CGPoint) {
         self.phase = phase
-        self.modelContext = modelContext
         self.widgetCenter = widgetCenter
-        canDeleted = widgetTemplate.checkCanBeDeleted(phase: phase)
     }
 
     func addTextItem() {
@@ -54,25 +45,25 @@ class WidgetPhaseEditorViewModel {
 
     // Saves the model when the view disappears or the scene phase changes.
     func saveWidgetTemplateModel() {
-        Logging.openUrl.debug("saveWidgetTemplateModel: TODO")
-
-        if let model = widgetTemplate.getWidgetTemplateModel() {
-            if model.modelContext == nil {
-                print("insert Model")
-                modelContext.insert(model)
-            }
-
-            if model.isDeleted {
-                return
-            }
-
-            model.jsonData = WidgetTemplateModel.encodeWidgetTemplate(widgetTemplate)
-            Logging.openUrl.debug("jsonData: \(model.jsonData)")
-//            Logging.openUrl.debug("saveWidgetTemplateModel: \(model.title) \(model.uuid) template: \(widgetTemplate.hashValue)")
-
-            // TODO: 优化
-            WidgetCenter.shared.reloadAllTimelines()
-        }
+//        Logging.openUrl.debug("saveWidgetTemplateModel: TODO")
+//
+//        if let model = widgetTemplate.getWidgetTemplateModel() {
+//            if model.modelContext == nil {
+//                print("insert Model")
+//                modelContext.insert(model)
+//            }
+//
+//            if model.isDeleted {
+//                return
+//            }
+//
+//            model.jsonData = WidgetTemplateModel.encodeWidgetTemplate(widgetTemplate)
+//            Logging.openUrl.debug("jsonData: \(model.jsonData)")
+        ////            Logging.openUrl.debug("saveWidgetTemplateModel: \(model.title) \(model.uuid) template: \(widgetTemplate.hashValue)")
+//
+//            // TODO: 优化
+//            WidgetCenter.shared.reloadAllTimelines()
+//        }
     }
 
     // Adds a sticker to the phase when selected.
