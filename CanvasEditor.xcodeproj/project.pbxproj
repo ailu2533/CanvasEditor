@@ -14,6 +14,33 @@
 		8DC0F7012C74959300F810B8 /* CanvasEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7002C74959300F810B8 /* CanvasEditorTests.swift */; };
 		8DC0F70B2C74959300F810B8 /* CanvasEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F70A2C74959300F810B8 /* CanvasEditorUITests.swift */; };
 		8DC0F70D2C74959300F810B8 /* CanvasEditorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F70C2C74959300F810B8 /* CanvasEditorUITestsLaunchTests.swift */; };
+		8DC0F71A2C74A10700F810B8 /* EditableWidgetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7192C74A10700F810B8 /* EditableWidgetCardView.swift */; };
+		8DC0F71D2C74A13E00F810B8 /* SwiftMovable in Frameworks */ = {isa = PBXBuildFile; productRef = 8DC0F71C2C74A13E00F810B8 /* SwiftMovable */; };
+		8DC0F7202C74A16100F810B8 /* LemonCountdownModel in Frameworks */ = {isa = PBXBuildFile; productRef = 8DC0F71F2C74A16100F810B8 /* LemonCountdownModel */; };
+		8DC0F7232C74A32D00F810B8 /* SwiftMovable in Frameworks */ = {isa = PBXBuildFile; productRef = 8DC0F7222C74A32D00F810B8 /* SwiftMovable */; };
+		8DC0F7262C74A38F00F810B8 /* LemonCountdownModel in Frameworks */ = {isa = PBXBuildFile; productRef = 8DC0F7252C74A38F00F810B8 /* LemonCountdownModel */; };
+		8DC0F7292C74A3AD00F810B8 /* ColorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8DC0F7282C74A3AD00F810B8 /* ColorKit */; };
+		8DC0F73B2C74AAEC00F810B8 /* CornerRadiusModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F73A2C74AAEC00F810B8 /* CornerRadiusModifier.swift */; };
+		8DC0F7482C74AB9E00F810B8 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F73C2C74AB9E00F810B8 /* Control.swift */; };
+		8DC0F7492C74AB9E00F810B8 /* TextAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F73D2C74AB9E00F810B8 /* TextAction.swift */; };
+		8DC0F74A2C74AB9E00F810B8 /* WidgetEditorControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F73F2C74AB9E00F810B8 /* WidgetEditorControlsView.swift */; };
+		8DC0F74B2C74AB9E00F810B8 /* WidgetEditorToolbarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7402C74AB9E00F810B8 /* WidgetEditorToolbarContent.swift */; };
+		8DC0F74C2C74AB9E00F810B8 /* WidgetPhaseEditorCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7412C74AB9E00F810B8 /* WidgetPhaseEditorCardView.swift */; };
+		8DC0F74D2C74AB9E00F810B8 /* BackgroundPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7432C74AB9E00F810B8 /* BackgroundPickerView.swift */; };
+		8DC0F74E2C74AB9E00F810B8 /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7442C74AB9E00F810B8 /* TabItemView.swift */; };
+		8DC0F74F2C74AB9E00F810B8 /* WidgetPhaseEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7452C74AB9E00F810B8 /* WidgetPhaseEditorView.swift */; };
+		8DC0F7502C74AB9E00F810B8 /* WidgetPhaseEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7462C74AB9E00F810B8 /* WidgetPhaseEditorViewModel.swift */; };
+		8DC0F7532C74ABFC00F810B8 /* HorizontalPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 8DC0F7522C74ABFC00F810B8 /* HorizontalPicker */; };
+		8DC0F7562C74AC1C00F810B8 /* PagerTabStripView in Frameworks */ = {isa = PBXBuildFile; productRef = 8DC0F7552C74AC1C00F810B8 /* PagerTabStripView */; };
+		8DC0F7582C74AC5E00F810B8 /* ControlPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7572C74AC5E00F810B8 /* ControlPanel.swift */; };
+		8DC0F75A2C74AC8000F810B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7592C74AC8000F810B8 /* Constants.swift */; };
+		8DC0F75C2C74ACA200F810B8 /* TextStyleEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F75B2C74ACA200F810B8 /* TextStyleEditor.swift */; };
+		8DC0F75E2C74ACED00F810B8 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F75D2C74ACED00F810B8 /* Logging.swift */; };
+		8DC0F7612C74AD1700F810B8 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7602C74AD1700F810B8 /* Line.swift */; };
+		8DC0F7632C74AD3600F810B8 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7622C74AD3600F810B8 /* ColorPickerView.swift */; };
+		8DC0F7652C74AD4500F810B8 /* LinearGradientPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7642C74AD4500F810B8 /* LinearGradientPicker.swift */; };
+		8DC0F7682C74AE2300F810B8 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 8DC0F7672C74AE2300F810B8 /* SwiftUIX */; };
+		8DC0F76A2C74B56200F810B8 /* Sticker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC0F7692C74B56100F810B8 /* Sticker.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +72,25 @@
 		8DC0F7062C74959300F810B8 /* CanvasEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvasEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC0F70A2C74959300F810B8 /* CanvasEditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasEditorUITests.swift; sourceTree = "<group>"; };
 		8DC0F70C2C74959300F810B8 /* CanvasEditorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasEditorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8DC0F7192C74A10700F810B8 /* EditableWidgetCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditableWidgetCardView.swift; path = ../../LemonCountdown/LemonCountdown/View/CanvasEditor/EditableWidgetCardView.swift; sourceTree = "<group>"; };
+		8DC0F73A2C74AAEC00F810B8 /* CornerRadiusModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadiusModifier.swift; sourceTree = "<group>"; };
+		8DC0F73C2C74AB9E00F810B8 /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		8DC0F73D2C74AB9E00F810B8 /* TextAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAction.swift; sourceTree = "<group>"; };
+		8DC0F73F2C74AB9E00F810B8 /* WidgetEditorControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetEditorControlsView.swift; sourceTree = "<group>"; };
+		8DC0F7402C74AB9E00F810B8 /* WidgetEditorToolbarContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetEditorToolbarContent.swift; sourceTree = "<group>"; };
+		8DC0F7412C74AB9E00F810B8 /* WidgetPhaseEditorCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetPhaseEditorCardView.swift; sourceTree = "<group>"; };
+		8DC0F7432C74AB9E00F810B8 /* BackgroundPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundPickerView.swift; sourceTree = "<group>"; };
+		8DC0F7442C74AB9E00F810B8 /* TabItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
+		8DC0F7452C74AB9E00F810B8 /* WidgetPhaseEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetPhaseEditorView.swift; sourceTree = "<group>"; };
+		8DC0F7462C74AB9E00F810B8 /* WidgetPhaseEditorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetPhaseEditorViewModel.swift; sourceTree = "<group>"; };
+		8DC0F7572C74AC5E00F810B8 /* ControlPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlPanel.swift; sourceTree = "<group>"; };
+		8DC0F7592C74AC8000F810B8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8DC0F75B2C74ACA200F810B8 /* TextStyleEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStyleEditor.swift; sourceTree = "<group>"; };
+		8DC0F75D2C74ACED00F810B8 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		8DC0F7602C74AD1700F810B8 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		8DC0F7622C74AD3600F810B8 /* ColorPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		8DC0F7642C74AD4500F810B8 /* LinearGradientPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientPicker.swift; sourceTree = "<group>"; };
+		8DC0F7692C74B56100F810B8 /* Sticker.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sticker.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +98,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DC0F7562C74AC1C00F810B8 /* PagerTabStripView in Frameworks */,
+				8DC0F7532C74ABFC00F810B8 /* HorizontalPicker in Frameworks */,
+				8DC0F7292C74A3AD00F810B8 /* ColorKit in Frameworks */,
+				8DC0F7682C74AE2300F810B8 /* SwiftUIX in Frameworks */,
+				8DC0F7262C74A38F00F810B8 /* LemonCountdownModel in Frameworks */,
+				8DC0F7232C74A32D00F810B8 /* SwiftMovable in Frameworks */,
+				8DC0F7202C74A16100F810B8 /* LemonCountdownModel in Frameworks */,
+				8DC0F71D2C74A13E00F810B8 /* SwiftMovable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +149,13 @@
 		8DC0F6ED2C74959200F810B8 /* CanvasEditor */ = {
 			isa = PBXGroup;
 			children = (
+				8DC0F75F2C74AD0C00F810B8 /* Utils */,
+				8DC0F7472C74AB9E00F810B8 /* WidgetPhaseEditorView */,
+				8DC0F7392C74AADD00F810B8 /* ViewModifier */,
+				8DC0F7192C74A10700F810B8 /* EditableWidgetCardView.swift */,
 				8DC0F6EE2C74959200F810B8 /* CanvasEditorApp.swift */,
 				8DC0F6F02C74959200F810B8 /* ContentView.swift */,
+				8DC0F7692C74B56100F810B8 /* Sticker.xcassets */,
 				8DC0F6F22C74959300F810B8 /* Assets.xcassets */,
 				8DC0F6F42C74959300F810B8 /* CanvasEditor.entitlements */,
 				8DC0F6F52C74959300F810B8 /* Preview Content */,
@@ -129,6 +188,60 @@
 			path = CanvasEditorUITests;
 			sourceTree = "<group>";
 		};
+		8DC0F7392C74AADD00F810B8 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				8DC0F73A2C74AAEC00F810B8 /* CornerRadiusModifier.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		8DC0F73E2C74AB9E00F810B8 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				8DC0F73C2C74AB9E00F810B8 /* Control.swift */,
+				8DC0F73D2C74AB9E00F810B8 /* TextAction.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		8DC0F7422C74AB9E00F810B8 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				8DC0F73F2C74AB9E00F810B8 /* WidgetEditorControlsView.swift */,
+				8DC0F7402C74AB9E00F810B8 /* WidgetEditorToolbarContent.swift */,
+				8DC0F7412C74AB9E00F810B8 /* WidgetPhaseEditorCardView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		8DC0F7472C74AB9E00F810B8 /* WidgetPhaseEditorView */ = {
+			isa = PBXGroup;
+			children = (
+				8DC0F75B2C74ACA200F810B8 /* TextStyleEditor.swift */,
+				8DC0F7572C74AC5E00F810B8 /* ControlPanel.swift */,
+				8DC0F7592C74AC8000F810B8 /* Constants.swift */,
+				8DC0F73E2C74AB9E00F810B8 /* Enum */,
+				8DC0F7422C74AB9E00F810B8 /* SubViews */,
+				8DC0F7432C74AB9E00F810B8 /* BackgroundPickerView.swift */,
+				8DC0F7442C74AB9E00F810B8 /* TabItemView.swift */,
+				8DC0F7452C74AB9E00F810B8 /* WidgetPhaseEditorView.swift */,
+				8DC0F7462C74AB9E00F810B8 /* WidgetPhaseEditorViewModel.swift */,
+			);
+			path = WidgetPhaseEditorView;
+			sourceTree = "<group>";
+		};
+		8DC0F75F2C74AD0C00F810B8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8DC0F7622C74AD3600F810B8 /* ColorPickerView.swift */,
+				8DC0F75D2C74ACED00F810B8 /* Logging.swift */,
+				8DC0F7602C74AD1700F810B8 /* Line.swift */,
+				8DC0F7642C74AD4500F810B8 /* LinearGradientPicker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +258,16 @@
 			dependencies = (
 			);
 			name = CanvasEditor;
+			packageProductDependencies = (
+				8DC0F71C2C74A13E00F810B8 /* SwiftMovable */,
+				8DC0F71F2C74A16100F810B8 /* LemonCountdownModel */,
+				8DC0F7222C74A32D00F810B8 /* SwiftMovable */,
+				8DC0F7252C74A38F00F810B8 /* LemonCountdownModel */,
+				8DC0F7282C74A3AD00F810B8 /* ColorKit */,
+				8DC0F7522C74ABFC00F810B8 /* HorizontalPicker */,
+				8DC0F7552C74AC1C00F810B8 /* PagerTabStripView */,
+				8DC0F7672C74AE2300F810B8 /* SwiftUIX */,
+			);
 			productName = CanvasEditor;
 			productReference = 8DC0F6EB2C74959200F810B8 /* CanvasEditor.app */;
 			productType = "com.apple.product-type.application";
@@ -192,6 +315,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					onboarding,
+				);
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
@@ -217,6 +343,14 @@
 				Base,
 			);
 			mainGroup = 8DC0F6E22C74959200F810B8;
+			packageReferences = (
+				8DC0F7212C74A32D00F810B8 /* XCRemoteSwiftPackageReference "SwiftMovable" */,
+				8DC0F7242C74A38F00F810B8 /* XCRemoteSwiftPackageReference "LemonCountdownModel" */,
+				8DC0F7272C74A3AD00F810B8 /* XCRemoteSwiftPackageReference "ColorKit" */,
+				8DC0F7512C74ABFC00F810B8 /* XCRemoteSwiftPackageReference "HorizontalPicker" */,
+				8DC0F7542C74AC1C00F810B8 /* XCRemoteSwiftPackageReference "PagerTabStripView" */,
+				8DC0F7662C74AE2300F810B8 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
 			productRefGroup = 8DC0F6EC2C74959200F810B8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DC0F76A2C74B56200F810B8 /* Sticker.xcassets in Resources */,
 				8DC0F6F72C74959300F810B8 /* Preview Assets.xcassets in Resources */,
 				8DC0F6F32C74959300F810B8 /* Assets.xcassets in Resources */,
 			);
@@ -259,7 +394,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DC0F74E2C74AB9E00F810B8 /* TabItemView.swift in Sources */,
+				8DC0F74D2C74AB9E00F810B8 /* BackgroundPickerView.swift in Sources */,
+				8DC0F7582C74AC5E00F810B8 /* ControlPanel.swift in Sources */,
+				8DC0F74B2C74AB9E00F810B8 /* WidgetEditorToolbarContent.swift in Sources */,
+				8DC0F75E2C74ACED00F810B8 /* Logging.swift in Sources */,
+				8DC0F74A2C74AB9E00F810B8 /* WidgetEditorControlsView.swift in Sources */,
+				8DC0F75A2C74AC8000F810B8 /* Constants.swift in Sources */,
 				8DC0F6F12C74959200F810B8 /* ContentView.swift in Sources */,
+				8DC0F73B2C74AAEC00F810B8 /* CornerRadiusModifier.swift in Sources */,
+				8DC0F7502C74AB9E00F810B8 /* WidgetPhaseEditorViewModel.swift in Sources */,
+				8DC0F7632C74AD3600F810B8 /* ColorPickerView.swift in Sources */,
+				8DC0F7482C74AB9E00F810B8 /* Control.swift in Sources */,
+				8DC0F7652C74AD4500F810B8 /* LinearGradientPicker.swift in Sources */,
+				8DC0F74C2C74AB9E00F810B8 /* WidgetPhaseEditorCardView.swift in Sources */,
+				8DC0F71A2C74A10700F810B8 /* EditableWidgetCardView.swift in Sources */,
+				8DC0F74F2C74AB9E00F810B8 /* WidgetPhaseEditorView.swift in Sources */,
+				8DC0F75C2C74ACA200F810B8 /* TextStyleEditor.swift in Sources */,
+				8DC0F7612C74AD1700F810B8 /* Line.swift in Sources */,
+				8DC0F7492C74AB9E00F810B8 /* TextAction.swift in Sources */,
 				8DC0F6EF2C74959200F810B8 /* CanvasEditorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,10 +595,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = top.lemonapp.CanvasEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -480,10 +634,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = top.lemonapp.CanvasEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -617,6 +772,98 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8DC0F7212C74A32D00F810B8 /* XCRemoteSwiftPackageReference "SwiftMovable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ailu2533/SwiftMovable.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		8DC0F7242C74A38F00F810B8 /* XCRemoteSwiftPackageReference "LemonCountdownModel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ailu2533/LemonCountdownModel";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		8DC0F7272C74A3AD00F810B8 /* XCRemoteSwiftPackageReference "ColorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Boris-Em/ColorKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8DC0F7512C74ABFC00F810B8 /* XCRemoteSwiftPackageReference "HorizontalPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ailu2533/HorizontalPicker.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		8DC0F7542C74AC1C00F810B8 /* XCRemoteSwiftPackageReference "PagerTabStripView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/PagerTabStripView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8DC0F7662C74AE2300F810B8 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8DC0F71C2C74A13E00F810B8 /* SwiftMovable */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftMovable;
+		};
+		8DC0F71F2C74A16100F810B8 /* LemonCountdownModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LemonCountdownModel;
+		};
+		8DC0F7222C74A32D00F810B8 /* SwiftMovable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DC0F7212C74A32D00F810B8 /* XCRemoteSwiftPackageReference "SwiftMovable" */;
+			productName = SwiftMovable;
+		};
+		8DC0F7252C74A38F00F810B8 /* LemonCountdownModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DC0F7242C74A38F00F810B8 /* XCRemoteSwiftPackageReference "LemonCountdownModel" */;
+			productName = LemonCountdownModel;
+		};
+		8DC0F7282C74A3AD00F810B8 /* ColorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DC0F7272C74A3AD00F810B8 /* XCRemoteSwiftPackageReference "ColorKit" */;
+			productName = ColorKit;
+		};
+		8DC0F7522C74ABFC00F810B8 /* HorizontalPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DC0F7512C74ABFC00F810B8 /* XCRemoteSwiftPackageReference "HorizontalPicker" */;
+			productName = HorizontalPicker;
+		};
+		8DC0F7552C74AC1C00F810B8 /* PagerTabStripView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DC0F7542C74AC1C00F810B8 /* XCRemoteSwiftPackageReference "PagerTabStripView" */;
+			productName = PagerTabStripView;
+		};
+		8DC0F7672C74AE2300F810B8 /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DC0F7662C74AE2300F810B8 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8DC0F6E32C74959200F810B8 /* Project object */;
 }
