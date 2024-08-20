@@ -24,9 +24,7 @@ class WidgetPhaseEditorViewModel {
     var showInputText = false
     var text = ""
 
-//    private(set) var widgetTemplate: WidgetTemplate!
     private(set) var phase: WidgetPhase!
-//    private(set) var modelContext: ModelContext!
     private(set) var widgetCenter: CGPoint!
 //
 //    // MARK: - 初始化方法
@@ -38,6 +36,7 @@ class WidgetPhaseEditorViewModel {
 
     func addTextItem() {
         let textItem = TextItem(text: text, pos: widgetCenter)
+        textItem.colorHex = "#2f261e"
         phase.texts.append(textItem)
         selection = textItem
         text = ""

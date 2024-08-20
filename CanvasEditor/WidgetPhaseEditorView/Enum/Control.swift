@@ -50,8 +50,7 @@ enum Control: Int, Hashable, CaseIterable {
                     }
                 }), selectedFontName: .constant(vm.selectedFontName), fontSize: .constant(vm.fontSize))
         case .eventInfo:
-            Text("TODO")
-//            EventInfoPickerView(tapCallback: vm.addEventInfo, wigetPhaseTimeKind: phase.kind)
+            EventInfoPickerView(tapCallback: vm.addEventInfo, wigetPhaseTimeKind: phase.kind)
         }
     }
 }

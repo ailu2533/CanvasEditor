@@ -41,6 +41,14 @@
 		8DC0F7652C74AD4500F810B8 /* LinearGradientPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7642C74AD4500F810B8 /* LinearGradientPicker.swift */; };
 		8DC0F7682C74AE2300F810B8 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 8DC0F7672C74AE2300F810B8 /* SwiftUIX */; };
 		8DC0F76A2C74B56200F810B8 /* Sticker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC0F7692C74B56100F810B8 /* Sticker.xcassets */; };
+		8DC0F7742C74E05800F810B8 /* DaysSinceEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F76C2C74E05800F810B8 /* DaysSinceEventView.swift */; };
+		8DC0F7752C74E05800F810B8 /* DaysUntilEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F76D2C74E05800F810B8 /* DaysUntilEventView.swift */; };
+		8DC0F7762C74E05800F810B8 /* EventInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F76E2C74E05800F810B8 /* EventInfoView.swift */; };
+		8DC0F7772C74E05800F810B8 /* EventStartDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F76F2C74E05800F810B8 /* EventStartDate.swift */; };
+		8DC0F7782C74E05800F810B8 /* EventTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7702C74E05800F810B8 /* EventTitleView.swift */; };
+		8DC0F7792C74E05800F810B8 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7712C74E05800F810B8 /* TimerView.swift */; };
+		8DC0F77A2C74E05800F810B8 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F7722C74E05800F810B8 /* WeekdayView.swift */; };
+		8DC0F77C2C74E0B900F810B8 /* EventInfoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0F77B2C74E0B900F810B8 /* EventInfoPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +99,14 @@
 		8DC0F7622C74AD3600F810B8 /* ColorPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		8DC0F7642C74AD4500F810B8 /* LinearGradientPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientPicker.swift; sourceTree = "<group>"; };
 		8DC0F7692C74B56100F810B8 /* Sticker.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sticker.xcassets; sourceTree = "<group>"; };
+		8DC0F76C2C74E05800F810B8 /* DaysSinceEventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysSinceEventView.swift; sourceTree = "<group>"; };
+		8DC0F76D2C74E05800F810B8 /* DaysUntilEventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysUntilEventView.swift; sourceTree = "<group>"; };
+		8DC0F76E2C74E05800F810B8 /* EventInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInfoView.swift; sourceTree = "<group>"; };
+		8DC0F76F2C74E05800F810B8 /* EventStartDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventStartDate.swift; sourceTree = "<group>"; };
+		8DC0F7702C74E05800F810B8 /* EventTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTitleView.swift; sourceTree = "<group>"; };
+		8DC0F7712C74E05800F810B8 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		8DC0F7722C74E05800F810B8 /* WeekdayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
+		8DC0F77B2C74E0B900F810B8 /* EventInfoPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInfoPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +165,8 @@
 		8DC0F6ED2C74959200F810B8 /* CanvasEditor */ = {
 			isa = PBXGroup;
 			children = (
+				8DC0F77B2C74E0B900F810B8 /* EventInfoPickerView.swift */,
+				8DC0F7732C74E05800F810B8 /* EventInfoView */,
 				8DC0F75F2C74AD0C00F810B8 /* Utils */,
 				8DC0F7472C74AB9E00F810B8 /* WidgetPhaseEditorView */,
 				8DC0F7392C74AADD00F810B8 /* ViewModifier */,
@@ -240,6 +258,20 @@
 				8DC0F7642C74AD4500F810B8 /* LinearGradientPicker.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		8DC0F7732C74E05800F810B8 /* EventInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				8DC0F76C2C74E05800F810B8 /* DaysSinceEventView.swift */,
+				8DC0F76D2C74E05800F810B8 /* DaysUntilEventView.swift */,
+				8DC0F76E2C74E05800F810B8 /* EventInfoView.swift */,
+				8DC0F76F2C74E05800F810B8 /* EventStartDate.swift */,
+				8DC0F7702C74E05800F810B8 /* EventTitleView.swift */,
+				8DC0F7712C74E05800F810B8 /* TimerView.swift */,
+				8DC0F7722C74E05800F810B8 /* WeekdayView.swift */,
+			);
+			path = EventInfoView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,7 +448,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC0F74E2C74AB9E00F810B8 /* TabItemView.swift in Sources */,
+				8DC0F7752C74E05800F810B8 /* DaysUntilEventView.swift in Sources */,
 				8DC0F74D2C74AB9E00F810B8 /* BackgroundPickerView.swift in Sources */,
+				8DC0F77C2C74E0B900F810B8 /* EventInfoPickerView.swift in Sources */,
 				8DC0F7582C74AC5E00F810B8 /* ControlPanel.swift in Sources */,
 				8DC0F74B2C74AB9E00F810B8 /* WidgetEditorToolbarContent.swift in Sources */,
 				8DC0F75E2C74ACED00F810B8 /* Logging.swift in Sources */,
@@ -429,11 +463,17 @@
 				8DC0F7482C74AB9E00F810B8 /* Control.swift in Sources */,
 				8DC0F7652C74AD4500F810B8 /* LinearGradientPicker.swift in Sources */,
 				8DC0F74C2C74AB9E00F810B8 /* WidgetPhaseEditorCardView.swift in Sources */,
+				8DC0F7762C74E05800F810B8 /* EventInfoView.swift in Sources */,
 				8DC0F71A2C74A10700F810B8 /* EditableWidgetCardView.swift in Sources */,
+				8DC0F7742C74E05800F810B8 /* DaysSinceEventView.swift in Sources */,
+				8DC0F7792C74E05800F810B8 /* TimerView.swift in Sources */,
 				8DC0F74F2C74AB9E00F810B8 /* WidgetPhaseEditorView.swift in Sources */,
 				8DC0F75C2C74ACA200F810B8 /* TextStyleEditor.swift in Sources */,
 				8DC0F7612C74AD1700F810B8 /* Line.swift in Sources */,
+				8DC0F7772C74E05800F810B8 /* EventStartDate.swift in Sources */,
 				8DC0F7492C74AB9E00F810B8 /* TextAction.swift in Sources */,
+				8DC0F77A2C74E05800F810B8 /* WeekdayView.swift in Sources */,
+				8DC0F7782C74E05800F810B8 /* EventTitleView.swift in Sources */,
 				8DC0F6EF2C74959200F810B8 /* CanvasEditorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

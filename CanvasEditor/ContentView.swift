@@ -11,7 +11,6 @@ import SwiftUI
 struct ContentView: View {
     @State private var phase = WidgetPhase(kind: .taskEndDateAfter, eventInfoProvider: nil)
 
-    @State private var widgetTemplate = WidgetTemplate()
 
     @State private var vm = WidgetPhaseEditorViewModel()
 
@@ -19,7 +18,6 @@ struct ContentView: View {
         VStack {
             WidgetPhaseEditorView(phase: phase, widgetSize: .init(width: 300, height: 300))
         }
-        .environment(widgetTemplate)
     }
 }
 
