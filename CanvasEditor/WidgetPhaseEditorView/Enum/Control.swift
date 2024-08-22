@@ -34,21 +34,15 @@ enum Control: Int, Hashable, CaseIterable {
         case .background:
             BackgroundPickerView(selectedBackgroundKind: vm.selectedBackgroundKind, background: phase.background)
         case .sticker:
-            SingleIconSetIconPickerView2( icons: stickerMap[vm.selectedStickerPack] ?? [], tapCallback: vm.addSticker)
+            SingleIconSetIconPickerView2(icons: stickerMap[vm.selectedStickerPack] ?? [], tapCallback: vm.addSticker)
         case .text:
-            TextStyleEditor(textItem: Binding(
-                get: { vm.selection as? Stylable },
-                set: { newValue in
-                    if var selected = vm.selection as? Stylable {
-                        if let colorHex = newValue?.colorHex {
-                            selected.colorHex = colorHex
-                        }
-                        selected.fontName = newValue?.fontName
-                        if let fontSize = newValue?.fontSize {
-                            selected.fontSize = fontSize
-                        }
-                    }
-                }), selectedFontName: .constant(vm.selectedFontName), fontSize: .constant(vm.fontSize))
+
+            if let textItem = (vm.selection as? TextItem) {
+                TextStyleEditor(textItem: textItem)
+            } else {
+                TextStyleEditor(textItem: .init(text: ""))
+            }
+
         case .eventInfo:
             EventInfoPickerView(tapCallback: vm.addEventInfo, wigetPhaseTimeKind: phase.kind)
         }

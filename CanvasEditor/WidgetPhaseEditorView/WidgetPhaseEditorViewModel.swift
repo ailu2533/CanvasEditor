@@ -8,6 +8,7 @@
 import Foundation
 import LemonCountdownModel
 import SwiftMovable
+import UIKit
 
 @Observable
 class WidgetPhaseEditorViewModel {
@@ -36,6 +37,9 @@ class WidgetPhaseEditorViewModel {
     func addTextItem() {
         let textItem = TextItem(text: text, pos: widgetCenter)
         textItem.colorHex = "#2f261e"
+        textItem.width = text.widthOfString(usingUIFont: .systemFont(ofSize: 25))
+        textItem.height = text.heightOfString(usingUIFont: .systemFont(ofSize: 25))
+
         phase.texts.append(textItem)
         selection = textItem
         text = ""
