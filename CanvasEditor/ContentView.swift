@@ -6,12 +6,12 @@
 //
 
 import LemonCountdownModel
+import SwiftWidgetEditorKit
 import SwiftUI
 
 struct ContentView: View {
     @State private var phase = WidgetPhase(kind: .taskEndDateAfter, eventInfoProvider: nil)
 
-    @State private var vm = WidgetPhaseEditorViewModel()
 
     var body: some View {
         VStack {

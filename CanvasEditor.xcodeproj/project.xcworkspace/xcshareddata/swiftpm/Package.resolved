@@ -1,5 +1,5 @@
 {
-  "originHash" : "7c177053fe1b372b280c20703814459ea7f24165fde85a81ed43046fc3546f44",
+  "originHash" : "e9b1b872df5c1fc2e6ca33b4f196fa06bf898700543434beeddffec88ef039e8",
   "pins" : [
     {
       "identity" : "colorkit",
@@ -44,15 +44,6 @@
       "state" : {
         "branch" : "main",
         "revision" : "56f3bf730ce4a2bb7bbae5d555fb7f3935e4cc73"
-      }
-    },
-    {
-      "identity" : "pagertabstripview",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/xmartlabs/PagerTabStripView",
-      "state" : {
-        "branch" : "master",
-        "revision" : "69921e0c755be7ff71d1e19f70b6179e432b8b0b"
       }
     },
     {
